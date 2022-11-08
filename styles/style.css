@@ -10,6 +10,7 @@
 
 .container {
   height: 100vh;
+  background-color: black;
 }
 
 .card {
@@ -32,19 +33,45 @@
   justify-content: center;
   align-items: center;
   border-radius: var(--border-radius);
-  color: white;
-  font-size: 3em;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: center;
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .card-face.front {
-  background-image: url("./../imgs/study.webp");
+  background-image: url("./../imgs/studies.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+.card-face.front1 {
+  background-image: url("./../imgs/money.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-face.front2 {
+  background-image: url("./../imgs/courses.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card-face.front3 {
+  background-image: url("./../imgs/languages.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
 .card-face.back {
-  background: grey;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
   transform: rotateY(180deg);
+}
+
+ul {
+  list-style: none;
 }
